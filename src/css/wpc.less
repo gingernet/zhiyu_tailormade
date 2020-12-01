@@ -1,0 +1,101 @@
+
+@import "./variables.less";
+// header
+.w-header .w-header-img {
+    text-align: center;
+    width: 33.00%;
+    height: 40px;
+    display: inline-block;
+    margin: auto;
+}
+
+.w-header .w-header-img img {
+    height: 40px;
+}
+
+.w-header .w-header-nav {
+    flex: 1;
+}
+
+.w-header-nav .w-nav-li {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.w-nav-li li {
+    padding: 0 5px;
+    position: relative;
+    line-height: 49px;
+    font-size: 12px;
+}
+
+.w-nav-li li a {
+    color: (@pPtxtC);
+    font-size: 12px;
+    padding: 2px 11px;
+}
+
+.w-nav-li li.w-li-active>a {
+    color: #fff;
+    background: (@pActiveC);
+    border-radius:10px;
+}
+
+.w-nav-li li a:hover {
+    color: (@pActiveC);
+}
+.w-nav-li li.w-li-active>a {
+    color: #fff;
+}
+
+.w-nav-li .w-sub-bx {
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 3;
+    top: 45px;
+    border: 1px solid (@pBorderC);
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 6px (@pNavShadowC);
+    -moz-box-shadow: 0 1px 6px (@pNavShadowC);
+    box-shadow: 0 1px 6px (@pNavShadowC);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 3px;
+    min-width: 80px;
+    text-align: center;
+    display: none;
+}
+
+.w-nav-li .w-sub-bx .w-hover-li {
+    display: block;
+}
+
+.w-nav-li .w-sub-bx a {
+    padding: 0 20px;
+    display: block;
+    line-height: 40px;
+    word-break: keep-all;           /* 不换行 */
+    white-space: nowrap;          /* 不换行 */
+}
+
+.w-nav-li .w-sub-bx a:hover {
+    background-color: (@pBorderC);
+}
+
+// banner 轮播
+.w-swiper-home img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+// 底部
+.w-footer {
+
+}
